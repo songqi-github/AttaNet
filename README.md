@@ -8,8 +8,14 @@ Please refer to our paper for more details:
 ## Code
 AttaNet head is uploaded, but it is not the final version. You can check how to implement SAM and AFM. I'm still working on this repo.
 
-## Trained ckpts:
+## Segmentation Models:
 Please download the trained model, the mIoU is evaluate on Cityscape validation dataset.
+
+|      Model       | Train Set | Test Set | mIoU (%) | Link |
+| :--------------: | :-------: | :------: | :------: | :--: |
+|  AttaNet_light   |   Train   |   Val    |          |      |
+| AttaNet_ResNet18 |   Train   |   Val    |          |      |
+
 
 ## Training
 python -m torch.distributed.launch --nproc_per_node=2 train.py
