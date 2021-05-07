@@ -17,8 +17,26 @@ Please download the trained model, the mIoU is evaluate on Cityscape validation 
 | AttaNet_ResNet18 |   Train   |   Val    |          |      |
 
 
-## Training
+## Quick start
+Download pretrained models for resnet series.
+```
+model_urls = {
+    'resnet18': 'https://download.pytorch.org/models/resnet18-5c106cde.pth',
+    'resnet34': 'https://download.pytorch.org/models/resnet34-333f7ec4.pth',
+    'resnet50': 'https://download.pytorch.org/models/resnet50-19c8e357.pth',
+    'resnet101': 'https://download.pytorch.org/models/resnet101-5d3b4d8f.pth',
+    'resnet152': 'https://download.pytorch.org/models/resnet152-b121ed2d.pth',
+}
+```
+### Training
+```
 python -m torch.distributed.launch --nproc_per_node=2 train.py
+```
+### Evaluating
+Evaluating AttaNet on the Cityscape validation dataset.
+```
+python evaluate.py
+```
 
 ## Citation
 If you find this repo is useful for your research, Please consider citing our paper:
