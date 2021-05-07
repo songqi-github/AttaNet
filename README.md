@@ -4,3 +4,22 @@ In this paper, we propose a new model, called Attention-Augmented Network (AttaN
 
 ## Code
 AttaNet head is uploaded, but it is not the final version. You can check how to implement SAM and AFM. I'm still working on this repo.
+
+## Trained ckpts:
+Please download the trained model, the mIoU is evaluate on Cityscape validation dataset.
+
+## Training
+python -m torch.distributed.launch --nproc_per_node=2 train.py
+
+## Citation
+If you find this repo is useful for your research, Please consider citing our paper:
+
+```
+@article{Song2021AttaNetAN,
+  title={AttaNet: Attention-Augmented Network for Fast and Accurate Scene Parsing},
+  author={Qi Song and Kangfu Mei and Rui Huang},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2103.05930}
+}
+```
