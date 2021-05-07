@@ -5,7 +5,7 @@ Please refer to our paper for more details:
 [arxiv version](https://arxiv.org/abs/2103.05930)
 
 ## Code
-AttaNet head is uploaded, but it is not the final version. You can check how to implement SAM and AFM. I'm still working on this repo.
+The final code is uploaded. You can train on your own environment. If you have any question and or dissussion, just open an issue. I will reply as soon as possible if I have the spare time.
 
 ## Segmentation Models:
 Please download the trained model, the mIoU is evaluate on Cityscape validation dataset.
@@ -27,6 +27,7 @@ model_urls = {
 }
 ```
 #### Training
+The training settings require 8 GPU with at least 11GB memory.
 ```
 python -m torch.distributed.launch --nproc_per_node=2 train.py
 ```
