@@ -12,8 +12,8 @@ Please download the trained model, the mIoU is evaluate on Cityscape validation 
 
 |      Model       | Train Set | Test Set | mIoU (%) |                             Link                             |
 | :--------------: | :-------: | :------: | :------: | :----------------------------------------------------------: |
-|  AttaNet_light   |   Train   |   Val    |          |                                                              |
-| AttaNet_ResNet18 |   Train   |   Val    |   70.6   | [BaiduYun(Access Code:zmb3)](https://pan.baidu.com/s/1OR45RYDU6sQ-jiIliisboA) |
+|  AttaNet_light   |   Train   |   Val    |   70.6   | [BaiduYun(Access Code:zmb3)](https://pan.baidu.com/s/1OR45RYDU6sQ-jiIliisboA) |
+| AttaNet_ResNet18 |   Train   |   Val    |   78.8   | [BaiduYun(Access Code:zmb3)](https://pan.baidu.com/s/1OR45RYDU6sQ-jiIliisboA) |
 
 ## Quick start
 Download pretrained models for resnet series.
