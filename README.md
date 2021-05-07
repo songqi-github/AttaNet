@@ -28,11 +28,11 @@ model_urls = {
     'resnet152': 'https://download.pytorch.org/models/resnet152-b121ed2d.pth',
 }
 ```
-### Training
+#### Training
 ```
 python -m torch.distributed.launch --nproc_per_node=2 train.py
 ```
-### Evaluating
+#### Evaluating
 Evaluating AttaNet on the Cityscape validation dataset.
 ```
 python evaluate.py
