@@ -27,7 +27,7 @@ model_urls = {
 }
 ```
 #### Training
-The training settings require 8 GPU with at least 11GB memory.
+The training settings require GPU with at least 11GB memory.
 ```
 python -m torch.distributed.launch --nproc_per_node=2 train.py
 ```
