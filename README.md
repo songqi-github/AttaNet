@@ -41,6 +41,16 @@ python evaluate.py
 If you find this repo is useful for your research, Please consider citing our paper:
 
 ```
+@inproceedings{song2021attanet,
+  title={AttaNet: Attention-Augmented Network for Fast and Accurate Scene Parsing},
+  author={Song, Qi and Mei, Kangfu and Huang, Rui},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={35},
+  number={3},
+  pages={2567--2575},
+  year={2021}
+}
+
 @article{Song2021AttaNetAN,
   title={AttaNet: Attention-Augmented Network for Fast and Accurate Scene Parsing},
   author={Qi Song and Kangfu Mei and Rui Huang},
