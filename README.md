@@ -4,9 +4,6 @@ In this paper, we propose a new model, called Attention-Augmented Network (AttaN
 Please refer to our paper for more details:
 [paper](https://ojs.aaai.org/index.php/AAAI/article/view/16359), [arxiv version](https://arxiv.org/abs/2103.05930)
 
-## Code
-The final code is uploaded. You can train on your own environment. If you have any question and or dissussion, just open an issue. I will reply as soon as possible if I have the spare time.
-
 ## Segmentation Models:
 Please download the trained model, the mIoU is evaluate on Cityscape validation dataset.
 
