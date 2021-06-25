@@ -31,7 +31,8 @@ python -m torch.distributed.launch --nproc_per_node=2 train.py
 #### Evaluating
 Evaluating AttaNet on the Cityscape validation dataset.
 ```
-python evaluate.py
+python evaluate.py  # for accuracy testing of heavy models
+python realtime_evaluate.py  # for accuracy testing of real-time models
 ```
 
 ## Citation
