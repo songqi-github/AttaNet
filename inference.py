@@ -32,6 +32,8 @@ start_ts = time.time()
 for i in range(500):
     input = F.interpolate(input_t, (512, 1024), mode='nearest')
     net(input)
+
+torch.cuda.synchronize()
 end_ts = time.time()
 
 t_cnt = end_ts - start_ts
