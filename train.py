@@ -14,6 +14,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.distributed as dist
 from torch.utils.data import DataLoader
+from apex.parallel import DistributedDataParallel
 
 import os
 import os.path as osp
@@ -86,9 +87,8 @@ def train():
         logger.info('successful load weights')
     net.cuda(device)
     net.train()
-    net = torch.nn.parallel.DistributedDataParallel(net, find_unused_parameters=True,
-                                                    device_ids=[local_rank],
-                                                    output_device=local_rank)
+    net = DistributedDataParallel(net)
+    
     logger.info('successful distributed')
     score_thres = 0.7
     n_min = cropsize[0]*cropsize[1]//2
