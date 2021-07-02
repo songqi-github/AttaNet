@@ -7,8 +7,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from light import Backbone
-from torch.nn import BatchNorm2d
-
+from apex.parallel import SyncBatchNorm as BatchNorm2d
 
 class ConvBNReLU(nn.Module):
     def __init__(self, in_chan, out_chan, ks=3, stride=1, padding=1, *args, **kwargs):
