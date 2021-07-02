@@ -7,7 +7,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from backbone import ResNet18
-from torch.nn import BatchNorm2d
+from apex.parallel import SyncBatchNorm as BatchNorm2d
 
 
 class ConvBNReLU(nn.Module):
